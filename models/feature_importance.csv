@@ -1,0 +1,12 @@
+Feature,Importance
+cluster,0.22881116
+pickup_latitude,0.33250445
+pickup_longitude,0.20705138
+hour,0.059539344
+day,0.0051183235
+day_of_week,0.023272127
+month,0.0042327014
+is_weekend,0.016817173
+is_rush_hour,0.007912533
+is_night,0.099867746
+office_hours,0.014873084

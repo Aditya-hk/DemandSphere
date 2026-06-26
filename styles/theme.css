@@ -1,0 +1,245 @@
+/* =====================================================
+   DemandSphere Premium Dark Theme
+   ===================================================== */
+
+/* Background */
+.stApp {
+    background: linear-gradient(135deg,#08111f,#0f172a,#111827);
+    color: #ffffff;
+}
+
+/* Main Container */
+.main .block-container {
+    max-width: 1450px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #111827;
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* Headers */
+h1{
+    color:white;
+    font-size:3rem !important;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+h2,h3{
+    color:#F8FAFC;
+    font-weight:700;
+}
+
+/* Paragraphs */
+p{
+    color:#CBD5E1;
+}
+
+/* Divider */
+hr{
+    border-color:rgba(255,255,255,.08);
+}
+
+/* Selectbox */
+div[data-baseweb="select"] > div{
+    background:#172033;
+    border-radius:14px;
+    border:1px solid rgba(0,229,255,.25);
+}
+
+/* Date Input */
+div[data-testid="stDateInput"] input{
+    background:#172033;
+    color:white;
+}
+
+/* Slider */
+.stSlider{
+    padding-top:15px;
+}
+
+/* Buttons */
+.stButton>button{
+    width:100%;
+    background:linear-gradient(90deg,#00C6FF,#0072FF);
+    color:white;
+    font-size:17px;
+    font-weight:700;
+    border:none;
+    border-radius:14px;
+    padding:12px;
+    transition:0.3s;
+}
+
+.stButton>button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 18px rgba(0,198,255,.5);
+}
+
+/* Metric Cards */
+div[data-testid="metric-container"]{
+    background:#151E2E;
+    border-radius:18px;
+    border:1px solid rgba(0,229,255,.12);
+    padding:18px;
+    box-shadow:
+        0 0 18px rgba(0,229,255,.08);
+}
+
+div[data-testid="metric-container"]:hover{
+    border:1px solid #00E5FF;
+    transition:.3s;
+}
+
+/* Metric Label */
+div[data-testid="metric-container"] label{
+    color:#94A3B8 !important;
+    font-size:15px;
+}
+
+/* Metric Value */
+div[data-testid="metric-container"] [data-testid="stMetricValue"]{
+    color:#00E5FF;
+    font-size:34px;
+    font-weight:800;
+}
+
+/* Info Boxes */
+div[data-testid="stAlert"]{
+    background:#172033;
+    border-radius:16px;
+    border:none;
+}
+
+/* Progress Bar */
+div[data-testid="stProgressBar"] > div > div{
+    background:linear-gradient(90deg,#00C6FF,#00E676);
+}
+
+/* Dataframe */
+div[data-testid="stDataFrame"]{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+/* Plotly Charts */
+.js-plotly-plot{
+    border-radius:20px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00C6FF;
+    border-radius:10px;
+}
+
+/* Cards */
+.card{
+    background:#151E2E;
+    padding:20px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.05);
+    box-shadow:0 0 25px rgba(0,229,255,.08);
+}
+
+/* Glass Effect */
+.glass{
+    background:rgba(21,30,46,.75);
+    backdrop-filter:blur(14px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+/* Footer Hide */
+footer{
+    visibility:hidden;
+}
+
+/* Hide Streamlit Menu */
+#MainMenu{
+    visibility:hidden;
+}
+
+/* Hide Deploy Button */
+[data-testid="stToolbar"]{
+    display:none;
+}
+
+/* Tabs */
+button[data-baseweb="tab"]{
+    background:#172033;
+    color:white;
+    border-radius:10px;
+}
+
+button[data-baseweb="tab"][aria-selected="true"]{
+    background:#00C6FF;
+    color:black;
+}
+
+/* Expander */
+details{
+    background:#151E2E;
+    border-radius:16px;
+}
+
+/* Success */
+.stSuccess{
+    border-radius:16px;
+}
+
+/* Warning */
+.stWarning{
+    border-radius:16px;
+}
+
+/* Error */
+.stError{
+    border-radius:16px;
+}
+
+/* Code Blocks */
+pre{
+    border-radius:16px;
+}
+
+/* Inputs */
+input, textarea{
+    border-radius:12px !important;
+}
+
+/* Animations */
+
+@keyframes glow{
+    0%{
+        box-shadow:0 0 8px rgba(0,229,255,.15);
+    }
+    50%{
+        box-shadow:0 0 25px rgba(0,229,255,.45);
+    }
+    100%{
+        box-shadow:0 0 8px rgba(0,229,255,.15);
+    }
+}
+
+div[data-testid="metric-container"]{
+    animation:glow 3s infinite;
+}
